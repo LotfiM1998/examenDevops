@@ -4,7 +4,7 @@
   "description": "devops 07 cd final",
   "main": "index.js",
   "scripts": {
-	"start": "webpack serve ./public/main.js --mode=development",
+    "start": "webpack serve ./public/main.js --mode=development",
     "test": "jest",
     "test:coverage": "jest --coverage",
     "test:watch": "jest --watchAll",
@@ -33,7 +33,7 @@
   },
   "homepage": "https://github.com/dlstechteaching/devops-07-cd-final#readme",
   "devDependencies": {
-    "commitizen": "^4.2.5",
+    "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.27.0",
     "eslint-config-prettier": "8.5.0",
