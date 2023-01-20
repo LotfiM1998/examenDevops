@@ -1,6 +1,6 @@
 /* istanbul ignore file */
 try {
-    const { isEmpty } = require("./services/validations");
+    const { isEmpty, eight_char } = require("./services/validations");
     const gamerTagInput = document.getElementById("gamerTagInput");
     const checkButton = document.getElementById("gamerTagCheckButton");
     const feedbackMessage = document.getElementById("gamerTagFeedback");
@@ -17,6 +17,12 @@ try {
         feedbackMessageText = isEmpty(gamerTagValue)
             ? "Gamer tag cannot be empty"
             : "Gamer tag is valid";
+        if (feedbackMessageText === "Gamer tag is valid") {
+            feedbackMessageText = under_eight_char(gamerTagValue)
+                ? "Gamer tag cannot be under 8 character"
+                : "Gamer tag is valid";
+        }
+
         feedbackMessage.textContent = feedbackMessageText;
     });
 } catch (err) {

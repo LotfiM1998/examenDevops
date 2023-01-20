@@ -35,4 +35,5 @@ npm start
 ### Notes
 
 To see the changes applied once the app is served, don't forget to build first
+
 # examenDevops
